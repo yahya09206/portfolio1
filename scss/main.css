@@ -1,5 +1,6 @@
 $primary-color: #444;
 
+
 * {
 	box-sizing: border-box;
 }
@@ -22,6 +23,12 @@ h3 {
 
 	&.lg-heading {
 		font-size: 6rem;
+	}
+
+	&.sm-heading {
+		margin-bottom: 2rem;
+		padding: 0.2rem 1rem;
+		background: lighten($primary-color, 2);
 	}
 }
 
