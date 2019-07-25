@@ -35,7 +35,8 @@
     justify-content: center;
     float: left;
     width: 50%;
-    height: 100hv; }
+    height: 100vh;
+    overflow: hidden; }
 
 * {
   box-sizing: border-box; }
