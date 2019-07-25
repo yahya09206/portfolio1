@@ -103,7 +103,20 @@
 			transform: translate3d(0,0,0);
 		}
 	}
+
+	.nav-link {
+		display: inline-block;
+		position: relative;
+		font-size: 30px;
+		text-transform: uppercase;
+		padding: 1rem 0;
+		font-weight: 300;
+		color: #fff;
+		text-decoration: none;
+	}
 }
+
+
 
 // Delay each nav item slide by 0.1 second
 @for $x from 1 through 4 {
