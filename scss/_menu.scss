@@ -59,4 +59,38 @@
 		height: 100vh;
 		overflow: hidden;
 	}
+
+	&-nav {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		background: darken($primary-color, 5);
+		transform: translate3d(0, -100%, 0);
+		@include easeOut;
+
+		&.show {
+			// Slide in from top
+			transform: translate3d(0,0,0);
+		}
+	}
+
+	// Branding Side 
+	&-branding {
+		background: $primary-color;
+		transform: translate3d(0, 100%, 0);
+		@include easeOut;
+
+		&.show {
+			// Slide in from bottom
+			transform: translate3d(0,0,0);
+		}
+
+		.portrait {
+			width: 250px;
+			height: 250px;
+			background: url('../img/portrait.jpg');
+			border-radius: 50%;
+			border: solid 3px $secondary-color;
+		}
+	}
 }
