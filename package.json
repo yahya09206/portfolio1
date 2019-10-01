@@ -1,10 +1,11 @@
 {
-  "name": "portfolio",
+  "name": "-y",
   "version": "1.0.0",
   "description": "Responsive Portfolio website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -15,8 +16,10 @@
   "bugs": {
     "url": "https://github.com/yahya09206/portfolio1/issues"
   },
-  "homepage": "https://github.com/yahya09206/portfolio1#readme",
+  "homepage": "https://github.com/yahya09206/portfolio1",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0"
-  }
+  },
+  "devDependencies": {}
 }
